@@ -1,0 +1,11 @@
+{
+  "name": "redis-source",
+  "config": {
+    "connector.class": "com.github.jcustenborder.kafka.connect.redis.RedisStreamSourceConnector",
+    "tasks.max": 1,
+    "topic": "redis-test",
+    "redis.url": "redis://localhost:6379",
+    "redis.insecure": true,
+    "redis.stream.name": "test-stream"
+  }
+}
